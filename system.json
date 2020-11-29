@@ -1,0 +1,26 @@
+{
+    "name": "cofd",
+    "title": "Chronicles of Darkness",
+    "description": "A system about mystery, personal horror and urban fantasy.",
+    "author": "Lexaj",
+    "version": 0.01,
+    "minimumCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.7",
+    "esmodules": [
+        "cofd.js"
+    ],
+    "styles":[
+        "cofd.css"
+    ],
+    "packs": [
+
+    ],
+    "languages":[
+
+    ],
+    "gridDistance": 5,
+    "gridUnit": "ft",
+    "primaryTokenattribute": "wounds",
+    "secondaryTokenattribute": "willpower",
+    "initiative": "1d10 + @initiative",
+    }
