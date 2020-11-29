@@ -1,26 +1,28 @@
 {
     "name": "cofd",
+    "type": "system",
     "title": "Chronicles of Darkness",
     "description": "A system about mystery, personal horror and urban fantasy.",
     "author": "Lexaj",
     "version": 0.01,
     "minimumCoreVersion": "0.7.7",
     "compatibleCoreVersion": "0.7.7",
-    "esmodules": [
-        "cofd.js"
-    ],
-    "styles":[
-        "cofd.css"
-    ],
-    "packs": [
-
-    ],
+    "esmodules": ["cofd.js"],
+    "styles":["cofd.css"],
+    "packs": [],
     "languages":[
-
+        {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+        }
     ],
     "gridDistance": 5,
     "gridUnit": "ft",
-    "primaryTokenattribute": "wounds",
-    "secondaryTokenattribute": "willpower",
+    "primaryTokenAttribute": "wounds",
+    "secondaryTokenAttribute": "willpower",
     "initiative": "1d10 + @initiative",
+    "url": "https://github.com/Lexaj-dev/CofD-FoundryVTT",
+    "manifest": "https://raw.githubusercontent.com/Lexaj-dev/CofD-FoundryVTT/master/system.json",
+    "download": "https://github.com/Lexaj-dev/CofD-FoundryVTT/archive/master.zip"
     }
