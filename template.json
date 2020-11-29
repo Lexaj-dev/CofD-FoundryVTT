@@ -1,4 +1,100 @@
 {
     "Actor": {},
-    "Item": {}
+    "Item": {
+        "types":[
+            "weapon",
+            "armor",
+            "equipment",
+            "vehicle",
+            "skill",
+            "merit",
+            "condition",
+            "tilt"
+        ],
+        "templates":{
+            "item_description":{
+                "description":""
+            },
+            "item_availability":{
+                "availibility":0
+            },
+            "item_quantity":{
+                "quantity":0
+            }
+        },
+        "weapon":{
+            "templates":[
+                "item_description",
+                "item_availability",
+                "item_quantity"
+            ],
+            "attackswith": "Firearms",
+            "damage":0,
+            "range":0,
+            "clip":0,
+            "Initiative":0,
+            "strength":0,
+            "size":0,
+            "special":""
+        },
+        "armor":{
+            "templates":[
+                "item_description",
+                "item_availability",
+                "item_quantity"
+            ],
+            "general_rating":0,
+            "ballistic_rating":0,
+            "strength":0,
+            "defense":0,
+            "speed":0,
+            "special":""
+        },
+        "equipment":{
+            "templates":[
+                "item_description",
+                "item_availability",
+                "item_quantity"
+            ],
+            "dicebonus":0,
+            "durability":0,
+            "size":0,
+            "structure":0
+        },
+        "vehicle":{
+            "templates":[
+                "item_description"
+            ],
+            "dice_modifier":0,
+            "size":0,
+            "durability":0,
+            "structure":0,
+            "speed":0,
+            "special":""
+        },
+        "skill": {
+            "templates": [
+                "item_description"
+            ],
+            "rank": 0,
+            "used_with":"",
+            "category":"physical"
+        },
+        "merit": {
+            "costs":0,
+            "prerequesites":"",
+            "effect":""
+        },
+        "condition":{
+            "description":"",
+            "resolution":"",
+            "beat":""
+        },
+        "tilt":{
+            "description":"",
+            "effect":"",
+            "cause":"",
+            "ending":""
+        }
+    }
 }
