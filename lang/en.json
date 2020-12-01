@@ -1,0 +1,21 @@
+{
+    "cofd": {
+        "attack":{
+            "none": "",
+            "firearms": "Firearms",
+            "brawl": "Brawl",
+            "weaponry": "Weaponry",
+            "athletics": "Athletics"
+        },
+        "weapon": {
+            "attackWith": "Attack with",
+            "damage": "Damage",
+            "range": "Range",
+            "clip": "Clip",
+            "initiative": "Initiative",
+            "strength": "Strength",
+            "size": "Size",
+            "special": "Special"
+        }
+    }
+}
