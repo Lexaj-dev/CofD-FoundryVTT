@@ -28,7 +28,7 @@
                 "item_availability",
                 "item_quantity"
             ],
-            "attackswith": "Firearms",
+            "type": "firearms",
             "damage":0,
             "range":0,
             "clip":0,

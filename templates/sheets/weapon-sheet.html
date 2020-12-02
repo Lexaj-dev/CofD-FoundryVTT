@@ -3,5 +3,59 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
-    <p>HELLO!</p>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "cofd.weapon.type"}}</th>
+                <th>{{localize "cofd.weapon.dmg"}} </th>
+                <th>{{localize "cofd.weapon.range"}}</th>
+                <th>{{localize "cofd.weapon.clip"}}</th>
+                <th>{{localize "cofd.weapon.initiative"}}</th>
+                <th>{{localize "cofd.weapon.str"}}</th>
+                <th>{{localize "cofd.item.size"}}</th>
+                <th>{{localize "cofd.item.availability"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.type">
+                        {{#select data.type}}
+                        {{#each config.attackTypes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.dmg" type="number" value="{{data.dmg}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.range" type="number" value="{{data.range}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.clip" type="number" value="{{data.clip}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.initiative" type="number" value="{{data.initiative}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.str" type="number" value="{{data.str}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.size" type="number" value="{{data.size}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.availability" type="number" value="{{data.availability}}" data-dtype="Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <th>{{localize "cofd.weapon.special"}}: </th>
+                </td>
+                <td colspan="7">
+                    <input name="data.special" type="text" value="{{data.special}}" data-dtype="String" />
+                </td>
+            </tr>
+        </table>
+        <textarea name="data.description">{{data.description}}</textarea>
+    </div>>
 </form>
