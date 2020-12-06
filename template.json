@@ -1,5 +1,52 @@
 {
-    "Actor": {},
+    "Actor": {
+        "types":[
+            "character",
+            "npc",
+            "ephemeral"
+        ],
+        "templates":{
+            "attributes":{
+                "intelligence":1,
+                "wits":1,
+                "resolve": 1,
+                "strength": 1,
+                "dexterity": 1,
+                "stamina": 1,
+                "presence": 1,
+                "manipulation": 1,
+                "composure": 1
+            },
+            "simple_attributes":{
+                "power": 1,
+                "finesse": 1,
+                "resistance": 1
+            },
+            "basic_traits":{
+                "Health":{
+                    "value":0,
+                    "max":12
+                },
+                "willpower":{
+                    "value":0,
+                    "max": 10
+                },
+                "size":5,
+                "initiative":0,
+                "defense":0,
+                "speed":0
+            }
+        },
+        "character:":{
+            "templates": [
+                "attributes",
+                "basic_traits"
+            ]
+            
+
+            
+        }
+    },
     "Item": {
         "types":[
             "weapon",
