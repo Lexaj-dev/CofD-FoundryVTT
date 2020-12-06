@@ -34,17 +34,50 @@
                 "size":5,
                 "initiative":0,
                 "defense":0,
-                "speed":0
+                "speed":0,
+                "armor":0
+            },
+            "details": {
+                "age": "",
+                "virtue": "",
+                "vice": "",
+                "concept": "",
+                "faction": "",
+                "description": "",
+                "aspiration": ""
             }
         },
         "character:":{
             "templates": [
                 "attributes",
-                "basic_traits"
+                "basic_traits",
+                "details"
+            ],
+            "beats": 0,
+            "current_xp": 0,
+            "spent_xp": 0,
+            "integrity": 0
+        },
+        "npc":{
+            "templates":[
+                "attributes",
+                "basic_traits",
+                "details"
             ]
-            
-
-            
+        },
+        "ephemeral":{
+            "templates":[
+                "simple_attributes",
+                "details",
+                "basic_traits"
+            ],
+            "type":"",
+            "rank":0,
+            "essence":0,
+            "integrity":0,
+            "bans":"",
+            "anchor":"",
+            "influence":0
         }
     },
     "Item": {
