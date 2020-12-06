@@ -12,36 +12,28 @@
             "tilt"
         ],
         "templates":{
-            "item_description":{
-                "description":""
-            },
-            "item_availability":{
-                "availibility":0
-            },
-            "item_quantity":{
-                "quantity":0
+            "basic_item":{
+                "availability":1,
+                "description":"",
+                "quantity":1
             }
         },
         "weapon":{
             "templates":[
-                "item_description",
-                "item_availability",
-                "item_quantity"
+                "basic_item"
             ],
             "type": "firearms",
             "damage":0,
             "range":0,
             "clip":0,
-            "Initiative":0,
-            "strength":0,
-            "size":0,
+            "initiative":0,
+            "strength":1,
+            "size":1,
             "special":""
         },
         "armor":{
             "templates":[
-                "item_description",
-                "item_availability",
-                "item_quantity"
+                "basic_item"
             ],
             "general_rating":0,
             "ballistic_rating":0,
@@ -52,9 +44,7 @@
         },
         "equipment":{
             "templates":[
-                "item_description",
-                "item_availability",
-                "item_quantity"
+                "basic_item"
             ],
             "dicebonus":0,
             "durability":0,
@@ -62,9 +52,6 @@
             "structure":0
         },
         "vehicle":{
-            "templates":[
-                "item_description"
-            ],
             "dice_modifier":0,
             "size":0,
             "durability":0,
@@ -73,9 +60,6 @@
             "special":""
         },
         "skill": {
-            "templates": [
-                "item_description"
-            ],
             "rank": 0,
             "used_with":"",
             "category":"physical"

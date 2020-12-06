@@ -3,7 +3,7 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
-    <div>
+    <div class="sheet-content">
         <table>
             <tr>
                 <th>{{localize "cofd.weapon.type"}}</th>
@@ -26,25 +26,25 @@
                     </select>
                 </td>
                 <td>
-                    <input name="data.dmg" type="number" value="{{data.dmg}}" data-dtype="Number"/>
+                    <input name="data.damage" type="number" value="{{data.damage}}" min=0 max=10 data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.range" type="number" value="{{data.range}}" data-dtype="Number" />
+                    <input name="data.range" type="number" value="{{data.range}}" min=0 data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.clip" type="number" value="{{data.clip}}" data-dtype="Number" />
+                    <input name="data.clip" type="number" value="{{data.clip}}" min=0 data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.initiative" type="number" value="{{data.initiative}}" data-dtype="Number" />
+                    <input name="data.initiative" type="number" value="{{data.initiative}}" min=-10 max=10 data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.str" type="number" value="{{data.str}}" data-dtype="Number" />
+                    <input name="data.strength" type="number" value="{{data.strength}}" min=1 max=10 data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.size" type="number" value="{{data.size}}" data-dtype="Number" />
+                    <input name="data.size" type="number" value="{{data.size}}" min=1 max=10 data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.availability" type="number" value="{{data.availability}}" data-dtype="Number" />
+                    <input name="data.availability" type="number" value="{{data.availability}}" min=0 max=10 data-dtype="Number" />
                 </td>
             </tr>
             <tr>
@@ -56,6 +56,6 @@
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
-    </div>>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
 </form>
