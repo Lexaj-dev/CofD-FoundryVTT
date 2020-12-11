@@ -1,0 +1,68 @@
+<form class="{{cssClass}}" autocomplete="off">
+    
+    {{!-- Header --}}
+    <header class="sheet-header">
+        <h1 class="charname">>
+            <span class="label name">{{localize "cofd.name"}}:</span>
+            <input class="input name" name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'Character Name'}}" />
+        </h1>
+        <div>
+            <span class="label concept">{{localize "cofd.concept"}}:</span>
+            <input class="input concept" name="data.concept" type="text" value="{{data.concept}}" />
+        </div>
+        <div>
+            <span class="label virtue">{{localize "cofd.virtue"}}:</span>
+            <input class="input virtue" name="data.virtue" type="text" value="{{data.virtue}}" />
+        </div>
+        <div>
+            <span class="label faction">{{localize "cofd.faction"}}:</span>
+            <input class="input faction" name="data.faction" type="text" value="{{data.faction}}" />
+        </div>
+        <div>
+            <span class="label groupName">{{localize "cofd.groupName"}}:</span>
+            <input class="input groupName" name="data.groupName" type="text" value="{{data.groupName}}" />
+        </div>
+        <div>
+            <span class="label vice">{{localize "cofd.vice"}}:</span>
+            <input class="input vice" name="data.vice" type="text" value="{{data.vice}}" />
+        </div>
+    </header>
+    {{!-- Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="skills">{{localize 'cofd.skills'}}</a>
+        <a class="item" data-tab="traits">{{localize 'cofd.traits'}}</a>
+        <a class="item" data-tab="combat">{{localize 'cofd.combat'}}</a>
+        <a class="item" data-tab="equipment">{{localize 'cofd.equipment'}}</a>
+        <a class="item" data-tab="details">{{localize 'cofd.details'}}</a>
+    </nav>
+
+    {{!-- Body --}}
+    <section class="sheet-body">
+        
+        {{!-- Skill tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            #ToDo Skills
+        </div>
+
+        {{!-- Trait tab --}}
+        <div class="tab traits" data-group="primary" data-tab="traits">
+            #ToDo Traits
+        </div>
+
+        {{!-- Combat tab --}}
+        <div class="tab combat" data-group="primary" data-tab="combat">
+            #ToDo Combat
+        </div>
+
+        {{!-- equipment tab --}}
+        <div class="tab equipment" data-group="primary" data-tab="equipment">
+            #ToDo Equipment
+        </div>
+
+        {{!-- details tab --}}
+        <div class="tab details" data-group="primary" data-tab="details">
+            #ToDo Details
+        </div>
+
+    </section>
+</form>

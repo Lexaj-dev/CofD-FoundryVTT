@@ -56,7 +56,8 @@
             "beats": 0,
             "current_xp": 0,
             "spent_xp": 0,
-            "integrity": 0
+            "integrity": 0,
+            "groupName": 0
         },
         "npc":{
             "templates":[

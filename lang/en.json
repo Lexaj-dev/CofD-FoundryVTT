@@ -7,20 +7,27 @@
             "weaponry": "Weaponry",
             "athletics": "Athletics"
         },
-        "weapon": {
-            "type": "Type",
-            "dmg": "Dmg",
-            "range": "Range",
-            "clip": "Clip",
-            "initiative": "Initiative",
-            "str": "Str",
-            "special": "Special"
-        },
-        "item": {
-            "description": "Description",
-            "size": "Size",
-            "availability": "Availability",
-            "quantity": "Qty"
-        }
+        "type": "Type",
+        "dmg": "Dmg",
+        "range": "Range",
+        "clip": "Clip",
+        "str": "Str",
+        "special": "Special",
+        "availability": "Availability",
+        "quantity": "Qty",
+        "description": "Description",
+        "size": "Size",
+        "initiative": "Initiative",
+        "name": "Name",
+        "concept": "Concept",
+        "virute": "Virtue",
+        "vice": "Vice",
+        "faction": "Faction",
+        "groupName": "Group Name",
+        "skills": "Skills",
+        "traits": "Traits",
+        "combat": "Combat",
+        "equipment": "Equipment",
+        "details": "Details"
     }
 }
